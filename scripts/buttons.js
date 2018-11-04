@@ -15,6 +15,8 @@ spaceElement.addEventListener('click', () => {
   let durationEnd = 3;
   modalElement.classList.toggle('modal-hidden')
   button(queryStr, pageSize, numImages, numSounds, durationEnd);
+  window.pJSDom[0].pJS.fn.vendors.destroypJS();
+  window["pJSDom"] = [];
 });
 
 dogElement.addEventListener('click', () => {
@@ -25,6 +27,8 @@ dogElement.addEventListener('click', () => {
   let durationEnd = 3;
   modalElement.classList.toggle('modal-hidden')
   button(queryStr, pageSize, numImages, numSounds, durationEnd);
+  window.pJSDom[0].pJS.fn.vendors.destroypJS();
+  window["pJSDom"] = [];
 });
 
 catElement.addEventListener('click', () => {
@@ -35,4 +39,6 @@ catElement.addEventListener('click', () => {
   let durationEnd = 3;
   modalElement.classList.toggle('modal-hidden')
   button(queryStr, pageSize, numImages, numSounds, durationEnd);
+  window.pJSDom[0].pJS.fn.vendors.destroypJS();
+  window["pJSDom"] = [];
 });

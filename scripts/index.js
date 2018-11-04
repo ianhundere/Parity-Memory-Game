@@ -74,8 +74,7 @@ function gameStart(dataObj) {
     tile.appendChild(tileBack);
     tile.appendChild(tileFace);
     tile.appendChild(tileSound);
-
-
+    
     // an event listener to each tile
     tile.addEventListener("click", function (e) {
       let selected = e.target;
