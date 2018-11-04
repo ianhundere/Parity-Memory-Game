@@ -24,7 +24,7 @@ function gameEnd(end) {
     });
     document.querySelector("[data-board]").innerHTML = "";
   } else if (end === "loss") {
-    modalH2Element.textContent = "You're a loser!";
+    modalH2Element.textContent = "Game Over";
     modalPElement.textContent = "(but you can try again)";
     modalElement.classList.toggle("modal-hidden");
     document.querySelector("[data-board]").innerHTML = "";
