@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/index.css">
-    <title>Parity</title>
-</head>
-
-<body id="particles-js">
-    <!-- header area to display title -->
-    <header class="main-header">
-        <div>
-            <h1>Parity</h1>
-            <div data-level class="level"> Level 0 </div>
-            <div data-timer class="timer">Time Remaining: 00:00</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="stylesheets/index.css" />
+        <title>Parity</title>
+    </head>
+    <body id="particles-js">
+        <!-- header area to display title -->
+        <header class="main-header">
+            <div>
+                <h1>Parity</h1>
+                <div data-level class="level">Level 0</div>
+                <div data-timer class="timer">Time Remaining: 00:00</div>
+            </div>
+        </header>
+        <div data-board class="game-box"><!-- game is drawn here --></div>
+        <div class="modal" data-modal>
+            <!-- game start screen with information on how to play -->
+            <div class="modalText">
+                <h2 data-modalTextH2>How to play</h2>
+                <p data-modalTextP>
+                    Match each tile within the alloted time.<br /><br />
+                    Click a button below to play!<br /><br />
+                </p>
+            </div>
+            <!-- init game buttons -->
+            <button class="button-styles" data-space>&lt;Space&gt;</button>
+            <button class="button-styles" data-dogs>&lt;Dogs&gt;</button>
+            <button class="button-styles" data-cats>&lt;Cats&gt;</button>
         </div>
-    </header>
-
-
-    <div data-board class="game-box">
-        <!-- game is drawn here -->
-
-
-    </div>
-    <div class="modal" data-modal>
-        <!-- game start screen with information on how to play  -->
-        <div class="modalText">
-            <h2 data-modalTextH2>How to play</h2>
-            <p data-modalTextP>Match each tile within the alloted time.<br><br>
-                Click a button below to play!<br><br>
+        <div class="audio">
+            <button onclick="document.getElementById('player').play()">
+                <strong>►</strong> Music
+            </button>
+            <button onclick="document.getElementById('player').pause()">
+                <strong>||</strong> Music
+            </button>
         </div>
-        <!-- init game buttons  -->
-        <button class="button-styles" data-space>&lt;Space&gt;</button>
-        <button class="button-styles" data-dogs>&lt;Dogs&gt;</button>
-        <button class="button-styles" data-cats>&lt;Cats&gt;</button>
-    </div>
-    <audio preload="auto" autobuffer autoplay loop>
-        <source src="assets/parck.mp3" />
-    </audio>
-    <script src="scripts/config.js"></script>
-    <script src="scripts/freesound.js"></script>
-    <script src="scripts/unsplash.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/buttons.js"></script>
-    <script src="scripts/timer.js"></script>
-    <script src="scripts/gameEnd.js"></script>
-    <script src="scripts/particles.js"></script>
-</body>
-
+        <audio id="player" preload="auto" autobuffer loop>
+            <source src="assets/parck.ogg" type="audio/ogg" />
+            <source src="assets/parck.mp3" type="audio/mpeg" />
+        </audio>
+        <script src="scripts/config.js"></script>
+        <script src="scripts/freesound.js"></script>
+        <script src="scripts/unsplash.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/buttons.js"></script>
+        <script src="scripts/timer.js"></script>
+        <script src="scripts/gameEnd.js"></script>
+        <script src="scripts/particles.js"></script>
+    </body>
 </html>
