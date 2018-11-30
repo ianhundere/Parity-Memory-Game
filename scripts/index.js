@@ -3,6 +3,8 @@
 // may be selected at a time. after 2 tiles are selected, tiles flip back
 // unless the tiles are correct, in which case the tiles stay visible.
 // guess count is reset after 2 guesses.
+// original music by ian hundere / https://soundcloud.com/grassnose / https://grassnose.bandcamp.com
+
 
 function button(queryStr, pageSize, numImages, numSounds, durationEnd) {
   // the promise.all will wait to pass its data to the anonymous function until both getImages and getSounds are resolved 
@@ -74,7 +76,7 @@ function gameStart(dataObj) {
     tile.appendChild(tileBack);
     tile.appendChild(tileFace);
     tile.appendChild(tileSound);
-    
+
     // an event listener to each tile
     tile.addEventListener("click", function (e) {
       let selected = e.target;
@@ -107,14 +109,14 @@ function gameStart(dataObj) {
           // if a match
           if (firstClick === secondClick) {
             // if at least two possible matches remain
-            if (numMatches < numImages-1){
+            if (numMatches < numImages - 1) {
               // added a delay between resetting clicks and
               // matched pairs disappearing.
               setTimeout(paired, wait);
               setTimeout(resetClicks, wait);
               numMatches++;
-            // else if only last match left
-            }else{
+              // else if only last match left
+            } else {
               setTimeout(paired, wait);
               setTimeout(resetClicks, wait);
               // stops timer on win
@@ -124,11 +126,11 @@ function gameStart(dataObj) {
               // have to pass the gameEnd param so must be in function wrapper
               // or it will excecute immediately: gameEnd(win) vs gameEnd 
               setTimeout(transition, 1525);
-              function transition (){
+              function transition() {
                 gameEnd(win);
               }
-            }    
-          }else {
+            }
+          } else {
             setTimeout(resetClicks, wait);
           }
         }

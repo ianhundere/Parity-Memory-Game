@@ -10,8 +10,8 @@ let level = 1;
 spaceElement.addEventListener('click', () => {
   let queryStr = 'space';
   let pageSize = 100;
-  let numImages = 6 + (level*2);
-  let numSounds = 6 + (level*2); 
+  let numImages = 6 + (level * 2);
+  let numSounds = 6 + (level * 2);
   let durationEnd = 3;
   modalElement.classList.toggle('modal-hidden')
   button(queryStr, pageSize, numImages, numSounds, durationEnd);
@@ -22,8 +22,8 @@ spaceElement.addEventListener('click', () => {
 dogElement.addEventListener('click', () => {
   let queryStr = 'dog';
   let pageSize = 100;
-  let numImages = 6 + (level*2);
-  let numSounds = 6 + (level*2);
+  let numImages = 6 + (level * 2);
+  let numSounds = 6 + (level * 2);
   let durationEnd = 3;
   modalElement.classList.toggle('modal-hidden')
   button(queryStr, pageSize, numImages, numSounds, durationEnd);
@@ -34,8 +34,8 @@ dogElement.addEventListener('click', () => {
 catElement.addEventListener('click', () => {
   let queryStr = 'cat';
   let pageSize = 100;
-  let numImages = 6 + (level*2);
-  let numSounds = 6 + (level*2);
+  let numImages = 6 + (level * 2);
+  let numSounds = 6 + (level * 2);
   let durationEnd = 3;
   modalElement.classList.toggle('modal-hidden')
   button(queryStr, pageSize, numImages, numSounds, durationEnd);
