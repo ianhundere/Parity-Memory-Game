@@ -6,11 +6,11 @@ DC-Frontend-Project
 Memory matching tile game to allow users to match tiles based on their matching picture and sound randomized each game. Allow users to pick from 3 options of image/sound themes. 
 
 ## Features
-- Progressive level system. Allow users to play 5 levels of increasing difficulty game boards.
-- Game continues with game win or game loss.
-- Time limit to add difficulty to the game.
-- Change between themes after each level completion or failure.
-- Match either image or sound excellent for accessibility.
+- Progressive level system that allows users to play 5 levels of increasing difficulty
+- Change between themes after each level completion or failure
+- Match either image or sound; excellent for accessibility
+- Time limit
+
 
 ## Successes
 - Avoided scope creep. Due to sufficient pre-planning we never encountered additional features that needed to be added that wasn't talked about in the initial stand-up.
