@@ -25,9 +25,9 @@ function getImages(queryStr, pageSize, numImages) {
         //pass json to image extractor
         .then(packageImg)
         .catch(networkError)
-    }
+}
 
-function networkError (){
+function networkError() {
     window.alert("Network error please confirm connection and refresh.")
 }
 // loop json array, extract small images, append attribution data

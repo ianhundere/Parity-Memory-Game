@@ -19,7 +19,7 @@ function gameEnd(end) {
     modalH2Element.textContent = "You've beaten the game!!!";
     modalPElement.textContent = "";
     modalElement.classList.toggle("modal-hidden");
-    particlesJS("particles-js", "app.js", function() {
+    particlesJS("particles-js", "app.js", function () {
       console.log("particles.js loaded - callback");
     });
     document.querySelector("[data-board]").innerHTML = "";
